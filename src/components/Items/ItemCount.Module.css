@@ -1,0 +1,10 @@
+.div-counter{
+    padding: 15px 0px 1px ;
+    display: flexbox;
+    align-items: center;
+}
+
+.buttonSpanSpace{
+    padding: 2px;
+}
+

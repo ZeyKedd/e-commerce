@@ -1,0 +1,26 @@
+npm i react-icon
+
+COMPILAR EL PROYECTO
+1. CD zk_shop
+2. npm start
+
+------------------------------------------
+Requerimientos Parcial Para el 24/01
+
+(X)1. Crear una aplicación utilizando el CLI con el nombre de tu tienda, y ejecuta los comandos necesarios para instalar React, configurarlo y visualizarlo en tu navegador.
+(X)2. En el directorio de tu proyecto, crea una carpeta dentro de src llamada “components”, que contenga a NavBar para crear una barra de menú simple.
+(X)3. Crear un componente CartWidget con un ícono y ubícalo en el navbar. Agrega algunos estilos.
+(X)4. Crear un componente contenedor ItemListContainer con una prop greeting y muestra el mensaje dentro del contenedor con el styling integrado
+(X)5. Crear un componente ItemCount que debe estar compuesto de un botón y controles, para incrementar y decrementar la cantidad requerida de ítems.
+(x)6. Crear los componentes Item e ItemList para mostrar algunos productos en ItemListContainer. Los ítems deben provenir de un llamado a una promise que los resuelva en tiempo diferido (setTimeout) de 2 segundos, para emular retrasos de red
+()7. Crear un componente    ItemDetailContainer con la misma premisa que ItemListContainer.
+()8. Crear un componente ItemDetail
+------------------------------------------
+Requerimientos Parcial Para el 31/01
+
+()1. Configurar en App.js el routing usando un BrowserRouter de tu aplicación con react-router-dom
+()2. Importar el ItemCount en el counter ItemDetail y configure el evento de compra, siguiendo los detalles de manual.
+()3. Implementar React Context para mantener el estado de compra del user
+()4. Expandir el componente Cart con el desglose de la compra y actualizar el componente CartWidget para hacerlo reactivo al contexto
+()5. Conectar la nueva ItemCollection de google Firebase al componente ItemListContainer y ItemDetailContainer
+()6. Crear la colección de órdenes.
