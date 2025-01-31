@@ -1,0 +1,71 @@
+.container-card{
+    padding: 50px;
+}
+
+/* Contenedor principal para la tarjeta */
+.card-container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #000000;
+    width: 100%;
+}
+
+/* Estilo de la imagen y los detalles del producto */
+.card-info {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.card-info img {
+    height: 300px;
+    border-radius: 8px;
+}
+
+
+/* Estilo del contador de productos */
+.card-counter {
+    align-items:center;
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-counter p {
+    text-align: center;
+}
+
+.card-counter button{
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;}
+
+/* Ajustes de texto y estilo general */
+.h3 {
+
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: cyan;
+}
+
+.p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.sld {
+    margin-top: 10px;
+}

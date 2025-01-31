@@ -6,6 +6,11 @@
     box-shadow: 0px 0px 10px 2px #ccc;
 }
 
+.logo-nav{
+    padding-top: 2px;
+    border-radius: 100px;
+    height: 60px;
+}
 .nav a {
     color: black;
     text-decoration: none;

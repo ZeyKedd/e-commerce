@@ -1,11 +1,11 @@
-import ProductCard from "./CardProduct";
+import Item from "./Item.jsx";
 import React from "react";
 
 const ItemList = ({ productList }) => {
     return (
         <div>
             {productList.map((product) => (
-                <ProductCard key={product.id} product={product} />
+                <Item key={product.id} product={product} />
             ))}
         </div>
     );

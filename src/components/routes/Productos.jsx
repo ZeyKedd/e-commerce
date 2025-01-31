@@ -5,7 +5,6 @@ const Productos = () => {
     return (
         <section>
         <h1>PRODUCTOS</h1>
-        {/* <ProductCard /> */}
         <ItemListContainer />
         </section>
     )
