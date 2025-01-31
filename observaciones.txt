@@ -4,6 +4,12 @@ COMPILAR EL PROYECTO
 1. CD zk_shop
 2. npm start
 
+Git Push Comandos= 
+git status                   # Verifica el estado de los archivos
+git add .                    # Agrega todos los cambios
+git commit -m "Mensaje claro de los cambios"
+git push                     # Sube los cambios al repositorio remoto
+
 ------------------------------------------
 Requerimientos Parcial Para el 24/01
 
