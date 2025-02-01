@@ -9,7 +9,7 @@ const ItemDetail = ({ item }) => {
         <div className="card-container">
             <div className="card-info">
                 <h3 className='h3'>{item.nombre}</h3>
-                <img className="" src={item.img} alt={item.nombre} />
+                <img src={item.img} alt={item.nombre} />
                 <p className='p'>{item.detalles}</p>
                 <span className='span'>${item.precio}</span>
                 <p>Stock: {item.stock}</p>

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 
 const Item = ({ product }) => {
-    if (!product) return null; //Esta parte evita que se renderize el resto del codigo sin agarra informacion que le llega tarde
+    if (!product) return null; //Esta parte evita que se renderize el resto del codigo sin agarra informacion que le llega tarde    
     return (
         <section className="section-cards">
             <div className="product-card">

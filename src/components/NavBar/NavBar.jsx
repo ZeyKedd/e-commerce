@@ -20,7 +20,7 @@ const Navbar = (props) => {
                     <li>
                         <Link to="/productos">Productos</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/category/remeras">Remeras</Link>
                     </li>
                     <li>
@@ -28,7 +28,7 @@ const Navbar = (props) => {
                     </li>
                     <li>
                         <Link to="/category/gorras">Gorras</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="/Contacto">Contacto</Link>
                     </li>
