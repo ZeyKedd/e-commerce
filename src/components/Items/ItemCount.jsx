@@ -17,7 +17,7 @@ const ItemCounter = ({ onAdd, stock, initial }) => {
                 <button className='button-counter' onClick={Añadir}> Agregar </button>
                 <span className='buttonSpanSpace'></span>
                 <button className='button-counter' onClick={Quitar}> Quitar </button>
-                <button onClick={() => onAdd(count)}>Añadir Al Carro</button>
+                <button onClick={() => onAdd(count)}>Añadir Al Carro</button> {/* onAdd es una funcion del padre para pasarle unformacion desde el hijo  */}
             </div>
             {/* <AddItemCart hideparrafo={true} amount={count} /> */}
         </div>

@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ItemCounter from './ItemCount';
 import './ItemDetail.Module.css'
 
 const ItemDetail = ({ item }) => {
 
+    const [cantidad, setCantidad] = useState(0)
+
     // Funcion para recibir data del hijo (ItemCount)
     const onAdd = (cantidadItem) => {
-        console.log("Cantidad al darle al boton añadir al carrito " + cantidadItem)
+        setCantidad(cantidadItem)
     }
 
     return (
