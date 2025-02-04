@@ -20,15 +20,6 @@ const Navbar = (props) => {
                     <li>
                         <Link to="/productos">Productos</Link>
                     </li>
-                    {/* <li>
-                        <Link to="/category/remeras">Remeras</Link>
-                    </li>
-                    <li>
-                        <Link to="/category/camisas">Camisas</Link>
-                    </li>
-                    <li>
-                        <Link to="/category/gorras">Gorras</Link>
-                    </li> */}
                     <li>
                         <Link to="/Contacto">Contacto</Link>
                     </li>
@@ -38,13 +29,15 @@ const Navbar = (props) => {
         )
     } else {
         return (
-            <nav className={"nav"}>
+            <nav className={"nav-footer"}>
                 <img className="logo-nav" src={Logo} alt="ZK SHOP" />
                 <h4>SEBASTIAN HERNANDEZ</h4> <h4>
                 POLITECNICO PIO</h4>
+                <div>
                 <a href="https://www.facebook.com/"><FaFacebookF /></a>
                 <a href="https://www.instagram.com/"><FaInstagram /></a>
                 <a href="https://www.x.com/"><BsTwitterX /></a> 
+                </div>
             </nav>
         )
     }

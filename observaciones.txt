@@ -25,7 +25,7 @@ Requerimientos Parcial Para el 24/01
 Requerimientos Parcial Para el 31/01
 
 (X)1. Configurar en App.js el routing usando un BrowserRouter de tu aplicación con react-router-dom
-(X-)2. Importar el ItemCount en el counter ItemDetail y configure el evento de compra, siguiendo los detalles de manual.
+(X-)2. Importar el ItemCount en el counter ItemDetail y configure el evento de compra, siguiendo los d  etalles de manual.
 ()3. Implementar React Context para mantener el estado de compra del user
 ()4. Expandir el componente Cart con el desglose de la compra y actualizar el componente CartWidget para hacerlo reactivo al contexto
 ()5. Conectar la nueva ItemCollection de google Firebase al componente ItemListContainer y ItemDetailContainer

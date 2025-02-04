@@ -1,5 +1,5 @@
 import React from "react";
-import ItemCounter from "./ItemCount";
+// import ItemCounter from "./ItemCount";
 import './Item.Module.css';
 import {Link} from 'react-router-dom'
 
@@ -11,17 +11,14 @@ const Item = ({ product }) => {
             <div className="product-card">
                 <div>
                 <h3>{product.nombre}</h3>
-                <img className="imgs" src={product.img} alt="hola" />
+                <img className="imgs" src={product.img} alt="imagen Del Producto" />
                 <p>{product.detalles}</p>
-                <span>${product.precio}</span>
+                <span>${product.precio} COP</span>
                 <p>Stock: {product.stock}</p>
                 <Link to={`/detalles/${product.id}`}>
                 <button>Ver Detalles</button>
                 </Link> 
                 </div>
-                <section>
-                    <ItemCounter />
-                </section>
             </div>
         </section>
     );

@@ -45,8 +45,8 @@ const Productos = () => {
                 <div className="select-menu">
                     <button ref={buttonRef} className="buttonDrop">Categorias</button>
                     <ul ref={dropdownRef} className="dropdown">
-                        <li className='dropdownLi'><Link style={{color:"white"}} to="/category/remeras">Remeras</Link></li>
-                        <li className='dropdownLi'><Link style={{color:"white"}} to="/category/camisas">Camisas</Link></li>
+                        <li className='dropdownLi'><Link style={{color:"white"}} to="/category/mancuernas">Mancuernas</Link></li>
+                        <li className='dropdownLi'><Link style={{color:"white"}} to="/category/barras">Barras Olimpicas</Link></li>
                         <li className='dropdownLi'><Link style={{color:"white"}} to="/category/gorras">Gorras</Link></li>
                     </ul>
                 </div>

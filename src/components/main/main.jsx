@@ -1,4 +1,5 @@
 import React from 'react'
+import './Main.Module.css'
 import { Route, Routes } from 'react-router-dom'
 import ItemlistContainer from '../Items/ItemListContainer'
 import ItemDetailContainer from '../Items/ItemDetailContainer'
@@ -15,7 +16,6 @@ const Main = () => {
             <Routes>
 
                 {/* Rutas Predeterminadas */}
-
 
                 <Route path="/"
                     element={<Inicio />}

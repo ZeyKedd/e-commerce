@@ -4,21 +4,22 @@ import './ItemCount.Module.css'
 import React, { useState } from "react";
 import AddItemCart from '../cart/AddItemCart';
 
-const ItemCounter = () => {
-    const [count, setCount] = useState(1);
-    
+const ItemCounter = ({ onAdd, stock, initial }) => {
+    const [count, setCount] = useState(initial);
 
-    const Añadir = () => {count < 30 ? setCount (count + 1):alert('Maximo')}
-    const Quitar = () => {count > 1 ? setCount (count - 1):alert('Minimo')}
+
+    const Añadir = () => { count < stock ? setCount(count + 1) : alert('Maximo') }
+    const Quitar = () => { count > initial ? setCount(count - 1) : alert('Minimo') }
     return (
         <div className='div-counter' >
             <p>{count}</p>
             <div className='button-layout'>
-            <button className='button-counter' onClick={Añadir}> Agregar </button>
-            <span className='buttonSpanSpace'></span>
-            <button className='button-counter' onClick={Quitar}> Quitar </button>
+                <button className='button-counter' onClick={Añadir}> Agregar </button>
+                <span className='buttonSpanSpace'></span>
+                <button className='button-counter' onClick={Quitar}> Quitar </button>
+                <button onClick={() => onAdd(count)}>Añadir Al Carro</button>
             </div>
-            <AddItemCart hideparrafo={true} amount={count} />
+            {/* <AddItemCart hideparrafo={true} amount={count} /> */}
         </div>
     )
 }

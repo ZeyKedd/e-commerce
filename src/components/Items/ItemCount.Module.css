@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+.button-layout{
+    line-height: 40px;
+    text-align: center;
+}
+
 .buttonSpanSpace{
     padding: 2px;
 }
