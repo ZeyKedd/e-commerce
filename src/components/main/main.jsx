@@ -6,7 +6,7 @@ import ItemDetailContainer from '../Items/ItemDetailContainer'
 import Contacto from '../routes/Contacto.jsx';
 import Inicio from '../routes/Inicio.jsx';
 import Productos from '../routes/Productos.jsx';
-import Cart from '../routes/Cart.jsx'
+import Cart from '../cart/Cart.jsx'
 import Perfil from '../routes/Perfil.jsx';
 
 

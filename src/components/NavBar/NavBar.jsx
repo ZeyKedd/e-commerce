@@ -1,7 +1,7 @@
 import React from "react"
 import './NavBar.Module.css'
 import CartWidget from "./CartWidget.jsx"
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import Logo from "../img/zkd.jpg"
 //
 import { BsTwitterX } from "react-icons/bs";
@@ -15,7 +15,7 @@ const Navbar = (props) => {
                 <img className="logo-nav" src={Logo} alt="ZK SHOP" />
                 <ul>
                     <li>
-                        <Link to="/">Inicio</Link> 
+                        <Link to="/">Inicio</Link>
                     </li>
                     <li>
                         <Link to="/productos">Productos</Link>
@@ -32,11 +32,19 @@ const Navbar = (props) => {
             <nav className={"nav-footer"}>
                 <img className="logo-nav" src={Logo} alt="ZK SHOP" />
                 <h4>SEBASTIAN HERNANDEZ</h4> <h4>
-                POLITECNICO PIO</h4>
-                <div>
-                <a href="https://www.facebook.com/"><FaFacebookF /></a>
-                <a href="https://www.instagram.com/"><FaInstagram /></a>
-                <a href="https://www.x.com/"><BsTwitterX /></a> 
+                    POLITECNICO PIO</h4>
+                <div className="container">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><FaInstagram /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.x.com/"><BsTwitterX /></a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         )

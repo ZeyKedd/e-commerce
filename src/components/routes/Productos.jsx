@@ -47,7 +47,10 @@ const Productos = () => {
                     <ul ref={dropdownRef} className="dropdown">
                         <li className='dropdownLi'><Link style={{color:"white"}} to="/category/mancuernas">Mancuernas</Link></li>
                         <li className='dropdownLi'><Link style={{color:"white"}} to="/category/barras">Barras Olimpicas</Link></li>
-                        <li className='dropdownLi'><Link style={{color:"white"}} to="/category/gorras">Gorras</Link></li>
+                        <li className='dropdownLi'><Link style={{color:"white"}} to="/category/ropa">Ropa deportiva</Link></li>
+                        <li className='dropdownLi'><Link style={{color:"white"}} to="/category/calzado">Calzado</Link></li>
+                        <li className='dropdownLi'><Link style={{color:"white"}} to="/category/accesorios">Accesorios</Link></li>
+                        <li className='dropdownLi'><Link style={{color:"white"}} to="/category/suplementos">Suplementos</Link></li>
                     </ul>
                 </div>
             </div>

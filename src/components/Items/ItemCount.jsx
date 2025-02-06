@@ -2,7 +2,6 @@
 // incrementar y decrementar la cantidad requerida de ítems.
 import './ItemCount.Module.css'
 import React, { useState } from "react";
-import AddItemCart from '../cart/AddItemCart';
 
 const ItemCounter = ({ onAdd, stock, initial }) => {
     const [count, setCount] = useState(initial);
@@ -14,12 +13,11 @@ const ItemCounter = ({ onAdd, stock, initial }) => {
         <div className='div-counter' >
             <p>{count}</p>
             <div className='button-layout'>
-                <button className='button-counter' onClick={Añadir}> Agregar </button>
+                <button className='button-counter' style={{borderRadius:"100px"}} onClick={Añadir}> + </button>
                 <span className='buttonSpanSpace'></span>
-                <button className='button-counter' onClick={Quitar}> Quitar </button>
-                <button onClick={() => onAdd(count)}>Añadir Al Carro</button> {/* onAdd es una funcion del padre para pasarle unformacion desde el hijo  */}
+                <button className='button-counter ' style={{borderRadius:"100px"}} onClick={Quitar}> - </button>
+                <button className='buttonAddtoCart' onClick={() => onAdd(count)}>Añadir Al Carro</button> {/* onAdd es una funcion del padre para pasarle unformacion desde el hijo  */}
             </div>
-            {/* <AddItemCart hideparrafo={true} amount={count} /> */}
         </div>
     )
 }
