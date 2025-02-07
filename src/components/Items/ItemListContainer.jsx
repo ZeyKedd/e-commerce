@@ -4,7 +4,7 @@
 import { React, useState, useEffect } from "react"
 import ItemList from "./ItemList"
 import products from "./products"
-import { PacmanLoader } from 'react-spinners'
+import { ScaleLoader } from 'react-spinners'
 import { useParams } from 'react-router-dom'
 
 const ItemlistContainer = () => {
@@ -24,7 +24,7 @@ const ItemlistContainer = () => {
 
         })
         getProducts()
-            .then(arg => {setProductList(arg); setIsLoading(false)})
+            .then(arg => { setProductList(arg); setIsLoading(false) })
             .catch(error => console.log("error: ", error),)
         return () => { setIsLoading(true) }
 
@@ -32,10 +32,10 @@ const ItemlistContainer = () => {
 
 
     return (
-        <div style={{display:"flex", justifyContent:"center"}} >
+        <div style={{ display: "flex", justifyContent: "center" }} >
             {
                 isLoading ? (
-                        <PacmanLoader />
+                    <ScaleLoader />
                 ) : (
                     <div>
                         <ItemList productList={productList} />
