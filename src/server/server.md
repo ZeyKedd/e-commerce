@@ -11,3 +11,5 @@ server.js usa express, mongose y cors
         - Se importa el schema y model que esta dentro de la ruta (./model/product.js)
         - Se crea un archivo aparte que sirva para insertar nuevos elementos a la base de datos el cual tambien
           se conecta a la base de datos momentaneamente y recibe el model de schema en el otro archivo
+
+Se debe iniciar el server.js (node server.js) y el react (npm start) al mismo tiempo en terminales distintas

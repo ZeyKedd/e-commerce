@@ -1,49 +1,38 @@
-// (-)4. Crear un componente contenedor ItemListContainer con una prop greeting y muestra el mensaje
-// dentro del contenedor con el styling integrado
+import React, { useState, useEffect } from "react";
+import ItemList from "./ItemList";
+import { ScaleLoader } from "react-spinners";
+import { useParams } from "react-router-dom";
 
-import { React, useState, useEffect } from "react"
-import ItemList from "./ItemList"
-import products from "./products"
-import { ScaleLoader } from 'react-spinners'
-import { useParams } from 'react-router-dom'
-
-const ItemlistContainer = () => {
-    const [productList, setProductList] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
-
-    const { categoryName } = useParams()
+const ItemListContainer = () => {
+    const [productList, setProductList] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const { categoryName } = useParams();
 
     useEffect(() => {
-        const getProducts = () => new Promise((resolve, reject) => {
-            const productFiltrado = products.filter((item) =>
-                item.category === categoryName
-            )
-            setTimeout(() => {
-                resolve(categoryName ? productFiltrado : products)
-            }, 1000)
+        const getProducts = async () => {
+            try {
+                const response = await fetch("http://localhost:5000/products");
+                const data = await response.json();
+                const filteredProducts = categoryName
+                    ? data.filter(item => item.category === categoryName)
+                    : data;
 
-        })
-        getProducts()
-            .then(arg => { setProductList(arg); setIsLoading(false) })
-            .catch(error => console.log("error: ", error),)
-        return () => { setIsLoading(true) }
+                setProductList(filteredProducts);
+            } catch (error) {
+                console.error("Error fetching products:", error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
 
-    }, [categoryName])
-
+        getProducts();
+    }, [categoryName]);
 
     return (
-        <div style={{ display: "flex", justifyContent: "center" }} >
-            {
-                isLoading ? (
-                    <ScaleLoader />
-                ) : (
-                    <div>
-                        <ItemList productList={productList} />
-                    </div>
-                )
-            }
+        <div style={{ display: "flex", justifyContent: "center" }}>
+            {isLoading ? <ScaleLoader /> : <ItemList productList={productList} />}
         </div>
-    )
-}
+    );
+};
 
-export default ItemlistContainer
+export default ItemListContainer;
